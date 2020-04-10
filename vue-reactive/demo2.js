@@ -29,19 +29,19 @@ function defineReactive(obj, key, val) {
     }
   })
 }
-// test(通过defineProperty实现的数据劫持)
-var data = {
-  name: 'jln',
-  age: {
-    xu: 19,
-    zhou: 18
-  }
-}
-observe(data)
-// let name = data.name // get value
-// data.name = 'jyf' // set value
-let xuAge = data.age.xu // get value
-data.age.xu = '20' // set value
+// // test(通过defineProperty实现的数据劫持)
+// var data = {
+//   name: 'jln',
+//   age: {
+//     xu: 19,
+//     zhou: 18
+//   }
+// }
+// observe(data)
+// // let name = data.name // get value
+// // data.name = 'jyf' // set value
+// let xuAge = data.age.xu // get value
+// data.age.xu = '20' // set value
 
 // 订阅发布模式实现依赖收集和派发更新
 
